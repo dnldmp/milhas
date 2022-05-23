@@ -52,7 +52,7 @@ export default function Home() {
   };
 
   return (
-    <Flex w="100%" justify="center" h="100vh" align="center">
+    <Flex w="100%" justify="center" h="100vh" align="center" flexDir="column">
       <Flex
         bg="gray.800"
         w="100%"
@@ -102,14 +102,16 @@ export default function Home() {
           Calcular
         </Button>
       </Flex>
+
       {fator !== 0 && custo !== 0 && (
-        <Flex direction="column" bg="pink.400" borderRadius="8" m="4" p="6">
+        <Flex flexDir="column" bg="pink.400" borderRadius="8" m="4" p="6">
           <Heading size="md">Fator: {fator}</Heading>
           <Heading size="md">Custo da milha: {custo.toFixed(2)}</Heading>
           <Heading size="md">Bonus: {bonus.toFixed(2)}</Heading>
           <Heading size="md">Total de milhas: {total}</Heading>
           <Heading size="md">
-            Numero max. milhas que podem ser transferidas: {maxPoints}
+            Numero max. milhas que podem ser transferidas:
+            {maxPoints.toFixed(2)}
           </Heading>
         </Flex>
       )}
