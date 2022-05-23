@@ -65,6 +65,7 @@ export default function Home() {
       >
         <Stack spacing="4">
           <Input
+            step="any"
             name="promotion"
             label="Percentual de Bonus"
             type="number"
@@ -72,6 +73,7 @@ export default function Home() {
             {...register("promotion")}
           />
           <Input
+            step="any"
             name="price"
             label="Preço da milha"
             type="number"
@@ -79,6 +81,7 @@ export default function Home() {
             {...register("price")}
           />
           <Input
+            step="any"
             name="quantidade"
             label="Quantidade de milhas"
             type="number"
@@ -86,6 +89,7 @@ export default function Home() {
             {...register("quantidade")}
           />
           <Input
+            step="any"
             name="limit"
             label="Limite do bonus"
             type="number"
