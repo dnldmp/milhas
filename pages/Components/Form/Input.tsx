@@ -44,4 +44,4 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, InputProps> = (
   );
 };
 
-export const Input = forwardRef(InputBase);
+export default forwardRef(InputBase);
